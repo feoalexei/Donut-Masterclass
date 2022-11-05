@@ -1,4 +1,13 @@
-@import './common';
-@import './example';
+@import './utils/mixins';
+@import './utils/variables';
+
 @import './base';
-@import './test';
+@import './header';
+@import './hero';
+@import './about';
+@import './program';
+@import './speakers';
+@import './price';
+@import './reviews';
+@import './registration';
+@import './footer';
