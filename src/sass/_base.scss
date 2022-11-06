@@ -8,7 +8,11 @@
 // font-family: 'Roboto', sans-serif;
 html {
   box-sizing: border-box;
+}
+
+body {
   font-family: 'Montserrat', sans-serif;
+  color: $text-color;
 }
 
 *,
@@ -98,4 +102,43 @@ a {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.section {
+  padding: 20px 0;
+
+  @include tablet {
+    padding: 40px 0;
+  }
+
+  @include desktop {
+    padding: 50px 0;
+  }
+}
+
+.section-title {
+  font-family: 'Montserrat Alternates';
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: center;
+  color: $title-color;
+
+  @include tablet {
+    font-size: 32px;
+    line-height: 1.22;
+  }
+}
+
+.section-text {
+  // font-family: 'Montserrat';
+  // font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: $text-color;
+
+  @include desktop {
+    font-size: 18px;
+    line-height: 1.22;
+  }
 }
